@@ -1,5 +1,6 @@
 #[derive(PartialEq, Debug)]
 pub struct Health(i32);
+
 #[derive(PartialEq, Debug)]
 pub struct Armor(i32);
 
@@ -11,7 +12,7 @@ pub struct GameState {
 
 #[cfg(test)]
 mod tests {
-    use crate::{GameState, Health, Armor};
+    use crate::{Armor, GameState, Health};
 
     #[test]
     fn equal_gamestates_are_equal() {
